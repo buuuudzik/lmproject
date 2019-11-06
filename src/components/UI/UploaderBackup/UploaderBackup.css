@@ -1,0 +1,25 @@
+.UploaderBackup {
+    
+}
+
+.UploaderBackup input {
+    height: 35px;
+    width: auto;
+    background: -webkit-gradient(linear, left top, right bottom, from(#4ba556), to(#fff0));
+    background: -webkit-linear-gradient(top left, #4ba556, #fff0);
+    background: -o-linear-gradient(top left, #4ba556, #fff0);
+    background: linear-gradient(to bottom right, #4ba556, #fff0);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 1px 1px 1px #106525;
+    cursor: pointer;
+}
+
+.UploadInput {
+
+}
+
+.UploadBtn {
+    text-align: right;
+}

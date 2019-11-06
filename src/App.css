@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header-right {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app-title {
+  padding: 5px 15px;
+}
+
+.app-filter {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.app-filter input {
+  height: 100%;
+  width: 300px;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  background: aliceblue;
+}
+
+.close-app {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.close-app i {
+  margin-right: 15px;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 93vh;
+}
+
+.container > * {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  min-width: 200px;
+}
+
+.loading-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  border-style: solid;
+  border-color: grey;
+  border-width: 0 1px 1px 0;
+  width: 90%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.add-element {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.elements {
+  width: 100%;
+  height: 88vh;
+  flex-grow: 1;
+  padding: 5px 15px 5px 0;
+  overflow: hidden auto;
+  text-align: left;
+}
+
+.element {
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom:5px;
+  display: flex;
+}
+
+.element:last-child {
+  margin-bottom: 0;
+}
+
+.element-subject {
+  flex-grow: 1;
+}
+
+.element-important {
+  font-weight: bold;
+}
+
+.element-delete {
+
+}
+
+.todos {
+  background: cadetblue;
+}
+
+.todos .caption {
+  background: skyblue;
+}
+
+.todos .element {
+  background: mintcream;
+}
+
+.warnings {
+  background: lightcoral;
+}
+
+.warnings .caption {
+  background: indianred;
+}
+
+.warnings .element {
+  background: blanchedalmond;
+}
+
+.logs {
+  background: lightgreen;
+}
+
+.logs .caption {
+  background: mediumseagreen;
+}
+
+.logs .element {
+  background: honeydew;
+}
+
+.backdrop {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #00000096;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.form {
+  width: 80vw;
+  height: 90vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.subject {
+  height: 7vh;
+  width: 90%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.form-inputs {
+  height: 76vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-inputs-row {
+  display: flex;
+  width: 100%;
+}
+
+.form-inputs-columns {
+  flex-direction: column;
+}
+
+.form-inputs-col {
+  flex-grow: 1;
+}
+
+.editable-input {
+  width: 100%;
+  display: flex;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.input-title {
+  text-align: left;
+  padding: 3px;
+}
+
+.input-control {
+  padding: 3px;
+}
+
+.editable-input-text {
+  width: 100%;
+}
+.editable-input-text input {
+  width: 100%;
+  padding: 5px;
+}
+
+.editable-input-longtext {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.editable-input-longtext textarea {
+  flex-grow: 1;
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+}
+
+.editable-input-links {
+  width: 100%;
+}
+.links-list {
+  height: 100px;
+  overflow: auto;
+}
+.editable-input-links input {
+  width: calc(100% - 30px);
+  margin-top: 5px;
+}
+.editable-input-links .link {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.editable-input-links .link input {
+  margin-right: 5px;
+}
+.edited-link {
+  display: flex;
+}
+.delete-link {
+  padding-left: 10px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.add-link {
+  padding: 3px;
+  text-align: center;
+  background-color: chartreuse;
+  cursor: pointer;
+}
+
+.form-buttons-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-buttons {
+  display: flex;
+  background: burlywood;
+  padding: 5px;
+}
+
+.transitions-buttons {
+  display: flex;
+  margin-right: 20px;
+}
+
+.action-buttons {
+  display: flex;
+}
+
+.form-to-todo {
+  background-color: cadetblue;
+}
+
+.form-to-warning {
+  background-color: lightcoral;
+}
+
+.form-to-log {
+  background-color: mediumseagreen;
+}
+
+.form-edit {
+  background-color: cadetblue;
+}
+
+.form-save {
+  background-color: gold;
+}
+
+.form-cancel {
+  background-color: lightgrey;
+}
+
+.form-to-todo, .form-to-warning, .form-to-log, .form-edit, .form-save, .form-cancel {
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px black;
+}
+
+.backup {
+  background-color: aliceblue;
+  padding: 15px;
+  align-self: baseline;
+}
+
+.backup form {
+  display: flex;
+}
+
+.backup button {
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.backup-caption {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.backup-section {
+  margin-bottom: 10px;
+}
+
+.backup-section:last-child {
+  margin-bottom: 0;
+}
+
+.backup-header {
+  padding: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.show-backup {
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
