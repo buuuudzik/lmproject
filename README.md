@@ -1,3 +1,25 @@
+LM Project
+
+Tool for managing local project over years.
+App is divided into 3 sections: todos, warnings and logs.
+
+App is divided into 3 sections:
+TODOS - future tasks (could be planned or not, could have deadline date), should be up to date
+WARNINGS - important notes that installer should be aware e.g. there was some crash on installation and the system is working now in limited mode until it will be fixed,
+LOGS - what was done and when
+
+Every task has such inputs:
+- dates (created, planned, deadline, finished),
+- subject - short description
+- description - full description and current notes
+- veryImportant - simple prioretization
+- duration - how many hours this task will take
+- tools - what kind of special tools are necessary e.g. ETS dongle or multimeter
+- links - links to websites e.g. script site or e.g. file in google disk
+
+The best is when user transforms todos into logs, not creating new one, because this is natural flow.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
