@@ -1,6 +1,6 @@
 # LM Project
 
-![alt text](https://github.com/buuuudzik/hvac_managerhttps://github.com/buuuudzik/lmproject/blob/master/public/logo512.png)
+![alt text](https://github.com/buuuudzik/lmproject/blob/master/public/logo512.png)
 
 Tool for managing local project over years.
 App is divided into 3 sections: todos, warnings and logs.
